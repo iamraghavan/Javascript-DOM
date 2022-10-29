@@ -1,0 +1,8 @@
+1. getElementById()
+2. getElementByClassName()
+3. getElementByTagName()
+4. Finding Element By CSS Selectors
+5. querySelector() and querySelectorAll()
+
+
+// console.log(document.body.children[0].children[1]);
