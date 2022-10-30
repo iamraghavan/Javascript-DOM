@@ -6,3 +6,46 @@
 
 
 // console.log(document.body.children[0].children[1]);
+
+===================================================================================================
+
+// Create Alert By using DOM
+Location : testing.js
+
+// Sample Code 
+const mainDiv = document.getElementById('main');
+// console.log(mainDiv);
+
+// Creating div Element 
+/* To Create a HTML via using the createElement Method */
+const createDIV = document.createElement("div");
+
+
+// to Assigning the Class Name to the Element
+createDIV.className = "alert"
+
+/* Method : 1 */
+// createDIV.textContent = "Food is Updated!"
+
+/* Method : 2 */
+const updateTextNode = document.createTextNode("Food is Updated!");
+// to Append the Text Node to the createElement 
+createDIV.append(updateTextNode);
+
+main.prepend(createDIV)
+
+
+/* To Place the HTML Element which has been using append (or) prepend */ 
+
+
+===========================================================================================================
+
+// How to get/set the content via the DOM using HTML & Javascript
+
+/*
+- textContent // Nodes, Elements
+- innerText // All Element
+- innerHTML
+*/
+
+===========================================================================================================
