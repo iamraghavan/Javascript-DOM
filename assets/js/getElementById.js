@@ -14,6 +14,6 @@ inputBtn.addEventListener("click", () =>{
     despResponse.innerText = inputFood.value
 
     // console.log(inputFood.value);
-    // document.write(inputFood.value);
+    document.write(inputFood.value);
 
 });

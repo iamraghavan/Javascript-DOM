@@ -1,21 +1,37 @@
-let inputFood = document.getElementById("input-food");
-let inputBtn = document.getElementById("input-btn");
-let despFood = document.getElementById("food-container");
+const foodcontElement = document.getElementById("food-container");
 
-inputBtn.addEventListener("click", () => {
+// Trick --->
+console.time("a")
 
-    const list = document.createElement("li");
-    const textNode = document.createTextNode(inputFood.value)
-    // const comment = document.createComment("Create a li");
+for(let i=1; i<=1000; i++) {
+
+    const createList = document.createElement('li');
+    createList.textContent = `food item ${i}`;
+    createList.className = 'food-item';
+
+    foodcontElement.append(createList)
+
+} 
+
+console.timeEnd("a");
+
+// Method 1
+console.time("b")
+const fragement = document.createDocumentFragment();
+for(let i=1; i<=1000; i++) {
+
+    const createList = document.createElement('li');
+    createList.textContent = `food item ${i}`;
+    createList.className = 'food-item';
+
+    fragement.append(createList);
+
+} 
+
+foodcontElement.append(fragement);
+console.timeEnd("b");
 
 
 
-    list.className = "food-item";
 
-    list.append(textNode);
-    // list.append(comment);
-    despFood.append(list);
-    
-
-    // despFood.innerHTML += `<li class="food-item">${inputFood.value.toUpperCase()}</li>`;
-});
+// console.dir(fragement);

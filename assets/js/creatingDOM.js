@@ -3,6 +3,7 @@ function createAlertElement(message){
     const createDIV = document.createElement("div");
     createDIV.className = "alert"
     const updateTextNode = document.createTextNode(message);
+    
     createDIV.append(updateTextNode);
     main.prepend(createDIV)
 };

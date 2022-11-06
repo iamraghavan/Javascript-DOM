@@ -49,3 +49,38 @@ main.prepend(createDIV)
 */
 
 ===========================================================================================================
+Fragement
+// Method 1
+const fragement = document.createDocumentFragment();
+
+// Method 2
+// new DocumentFragment();
+
+
+Trick ----> console.time("VarName");
+            /*
+            
+            Executed Code
+            
+            */
+            console.timeEnd("VarName")
+
+
+It Help to Calculate the Time to Executed the Code and test the Speed....
+
+===========================================================================================================
+-------------------------------- Cloneing the DOM Element --------------------------------
+/* 
+cloneNode ---> retrun the copy of node it will accept the true/false
+cloneNode ---> (False) only clones the top of the element
+*/
+let cloneEl = despFood.cloneNode();
+console.log(cloneEl);
+
+
+/* cloneNode ---> (True) all the elements and its subtree are display */
+let cloneElTrue = despFood.cloneNode(true);
+console.log(cloneElTrue);
+
+
+===========================================================================================================
