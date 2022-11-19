@@ -1,7 +1,7 @@
 <html lang="en">
-
 <head>
     <title>Javascript (Document Object Model)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/css/style.css">
     
@@ -17,10 +17,8 @@
 
     <main id="main">
 
-        
-
   
-        <!-- <div class="alert">
+        <!-- <div class="alert">   
             <div class="alert-message">
                 <strong><i class="fa fa-ticket fa-1x"></i> Sucessfull</strong> Food is updated!
             </div>
@@ -35,11 +33,44 @@
         <ul id="food-container" class="food-container">
             <li class="food-item">
                 <div>Sambar</div>
-                <div><img id="closeBtn" src="./assets/img/close.png" width="auto" height="20px" alt=""></div>
+                <div onclick="removeItem(event)">
+                    <i class="fa fa-xmark"></i>
+                </div>
             </li>
-            <li class="food-item">Rasam </li>
-            <li class="food-item">Curd</li>
+            <li class="food-item">
+                <div>Rasam</div>
+                <div onclick="removeItem(event)">
+                    <i class="fa fa-xmark"></i>
+                </div>
+            </li>
+            <li class="food-item"><div>Uttapam</div>
+                <div onclick="removeItem(event)"><i class="fa fa-xmark"></i></div></li>
         </ul>
+
+
+        <!-- Sibling Elements -->
+        <!-- <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul> -->
+
+
+
+        <!-- Demo Form -->
+
+        <div class="inputName-container">
+            <input type="text" id="nameID" name="fullName" placeholder="Full Name" data-isALive="yesBoss" place="Chennai" hobbies="love your heart" style="background-color:rgb(231, 231, 231);">
+        </div>
+
+        <!-- 
+            Declare the Own Attributes for the any input element
+            Example : <input type="text" id="" data-isALive="true" data-hobbies="Love Your's heart">
+         -->
+
+        <!-- --------- -->
         <!-- DOM Clone Elements Content -->
         <!-- <button  class="input-button" id="elSync">Sync</button>
         <div id="duplicateData"></div> -->
@@ -69,8 +100,14 @@
 
     <!-- <script src="./assets/js/DOMElementClone.js"></script> -->
     <script src="./assets/js/removeDOMElement.js"></script>
-    
-    <script src="./assets/js/appendMethod.js"></script>
+    <!-- <script src="./assets/js/LoopingDOMElement.js"></script> -->
+    <!-- <script src="./assets/js/FindingParentElement.js"></script> -->
+    <!-- <script src="./assets/js/appendMethod.js"></script> -->
+    <!-- <script src="./assets/js/FindingSiblingElements.js"></script> -->
+    <script src="./assets/js/setting&getting.js"></script>
+
+
+
 </body>
 
 </html>
